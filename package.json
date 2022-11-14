@@ -1,0 +1,21 @@
+{
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "http-proxy-middleware": "^2.0.6",
+    "index.js": "^0.0.3",
+    "morgan": "^1.10.0",
+    "pg": "^8.8.0"
+  },
+  "name": "heroku_final",
+  "version": "1.0.0",
+  "description": "Heroku_Postgress_connection",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "author": "Janani",
+  "license": "ISC",
+  "keywords": []
+}
