@@ -4,7 +4,7 @@ const {request, response} = require("express");
 const app = express()
 const db = require('./postgres')
 //const port = 3001
-const port =  process.env.port || 3006
+const port =  process.env.PORT || 3006
 
 app.use(bodyParser.json())
 app.use(
