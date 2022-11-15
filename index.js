@@ -1,10 +1,10 @@
 require('dotenv').config();
-const express = require('express')
-const bodyParser = require('body-parser')
+const express = require('express');
+const bodyParser = require('body-parser');
 const {request, response} = require("express");
-const app = express()
-const db = require('./postgres')
-const port =  process.env.PORT || 3000
+const app = express();
+const db = require('./postgres');
+const port = process.env.PORT || 3008;
 
 app.use(bodyParser.json())
 app.use(
@@ -14,8 +14,7 @@ app.use(
 )
 
 app.get('/', (request, response) => {
-        resp
-        onse.json({info: 'Our class is live.'})
+        response.json({info: 'Our class is live.'})
 })
 
 app.get('/persons', db.getUsers)
